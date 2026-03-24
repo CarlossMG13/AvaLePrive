@@ -9,6 +9,59 @@
     "headline": "The Art of Private Haute Cuisine",
     "infoBox": "Ultra-luxury culinary service evoking the pages of a high-end gastronomy magazine. Bespoke experiences for the discerning few."
   },
+  "placeholder": {
+    "gastronomia": {
+      "eyebrow": "Gastronomy",
+      "heading": "A Menu Taking Shape",
+      "body": "We are building something truly exceptional. Soon you will discover a culinary selection designed for the most discerning palates — globally sourced ingredients, haute cuisine technique, and a presentation that turns every bite into a memory."
+    },
+    "experiencias": {
+      "eyebrow": "Experiences",
+      "heading": "Unique Moments On Their Way",
+      "body": "Every experience we design is one of a kind. We are preparing a showcase of the most exclusive events Avá Lé Privé can orchestrate — from intimate dinners to grand celebrations in Puerto Rico's most privileged settings."
+    }
+  },
+  "editorial": {
+    "block1": {
+      "eyebrow": "Philosophy",
+      "heading": "Artistry on a Plate",
+      "body": "Every dish is a canvas, every ingredient a stroke of genius. We source the rarest provisions globally, transforming them into fleeting masterpieces designed to captivate your senses before the first bite.",
+      "cta": "Discover Menu"
+    },
+    "block2": {
+      "eyebrow": "Experiences",
+      "heading": "Bespoke Gatherings",
+      "body": "From intimate private chef dinners in your estate to lavish yacht catering, we orchestrate flawless events. Our dedicated sommeliers and white-glove service staff ensure an evening of uncompromised elegance.",
+      "cta": "Request Proposal"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "heading": "What Our Guests Are Saying",
+    "items": [
+      {
+        "quote": "An unparalleled sensory experience. The level of detail in every dish exceeded our highest expectations.",
+        "name": "Alejandro V.",
+        "context": "Private Dinner — Condado, San Juan"
+      },
+      {
+        "quote": "We hired the service for our annual gala and the execution was flawless. World-class gastronomy.",
+        "name": "Mónica G.",
+        "context": "Corporate Event — Dorado Beach"
+      },
+      {
+        "quote": "It's not just food — it's a perfect choreography between the chef, sommelier, and setting. Simply sublime.",
+        "name": "Roberto S.",
+        "context": "Yacht Experience — La Parguera"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Exclusivity Without Limits",
+    "heading": "Let Us Design Your Next Private Experience",
+    "body": "Every detail, every bite, every moment — conceived exclusively for you. Share your vision and our team will transform it into an evening without precedent.",
+    "button": "Request Experience"
+  },
   "footer": {
     "rights": "© 2025 Avá Lé Privé. All rights reserved."
   }

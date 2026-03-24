@@ -9,6 +9,59 @@
     "headline": "El Arte de la Alta Cocina Privada",
     "infoBox": "Servicio culinario de ultra-lujo que evoca las páginas de una revista de alta gastronomía. Experiencias únicas para los pocos que lo distinguen."
   },
+  "placeholder": {
+    "gastronomia": {
+      "eyebrow": "Gastronomía",
+      "heading": "Una Carta Que Está Tomando Forma",
+      "body": "Estamos construyendo algo verdaderamente excepcional. Pronto descubrirá una selección culinaria diseñada para los paladares más exigentes — ingredientes de origen global, técnica de alta escuela y una presentación que convierte cada bocado en un recuerdo."
+    },
+    "experiencias": {
+      "eyebrow": "Experiencias",
+      "heading": "Vivencias Únicas En Camino",
+      "body": "Cada experiencia que diseñamos es irrepetible. Estamos preparando una vitrina de los eventos más selectos que Avá Lé Privé puede orquestar — desde cenas íntimas hasta celebraciones de gran formato en los escenarios más privilegiados de Puerto Rico."
+    }
+  },
+  "editorial": {
+    "block1": {
+      "eyebrow": "Filosofía",
+      "heading": "El Arte en el Plato",
+      "body": "Cada plato es un lienzo, cada ingrediente un trazo de genialidad. Seleccionamos las provisiones más selectas del mundo y las transformamos en obras maestras efímeras diseñadas para cautivar tus sentidos antes del primer bocado.",
+      "cta": "Descubrir Menú"
+    },
+    "block2": {
+      "eyebrow": "Experiencias",
+      "heading": "Eventos a la Medida",
+      "body": "Desde cenas íntimas con chef privado en tu residencia hasta catering en yate, orquestamos eventos impecables. Nuestros sommeliers y personal de guante blanco garantizan una velada de elegancia sin compromisos.",
+      "cta": "Solicitar Propuesta"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Comentarios",
+    "heading": "Lo que Dicen Nuestros Comensales",
+    "items": [
+      {
+        "quote": "Una experiencia sensorial sin precedentes. El nivel de detalle en cada plato superó nuestras expectativas más altas.",
+        "name": "Alejandro V.",
+        "context": "Cena Privada — Condado, San Juan"
+      },
+      {
+        "quote": "Contratamos el servicio para nuestra gala anual y la ejecución fue impecable. Gastronomía de clase mundial.",
+        "name": "Mónica G.",
+        "context": "Evento Corporativo — Dorado Beach"
+      },
+      {
+        "quote": "No solo es comida, es una coreografía perfecta entre el chef, el sommelier y el entorno. Simplemente sublime.",
+        "name": "Roberto S.",
+        "context": "Experiencia en Yate — La Parguera"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Exclusividad Sin Límites",
+    "heading": "Diseñemos Su Próxima Experiencia Privada",
+    "body": "Cada detalle, cada bocado, cada momento — concebido exclusivamente para usted. Cuéntenos su visión y nuestro equipo lo convertirá en una velada que no tendrá precedentes.",
+    "button": "Solicitar Experiencia"
+  },
   "footer": {
     "rights": "© 2025 Avá Lé Privé. Todos los derechos reservados."
   }

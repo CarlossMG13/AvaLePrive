@@ -18,7 +18,7 @@ export default function HeroSection() {
           loop
           playsInline
         >
-          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src="/src/assets/videos/hero-video.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/55" />
