@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Phone, Mail, MapPin } from "lucide-react";
 import contactImg from "@/assets/img/contact.jpg";
+import { sanitizeContactForm } from "@/lib/sanitize";
 
 const INPUT_BASE =
   "w-full bg-transparent border-0 border-b pb-3 pt-1 text-white/90 placeholder:text-white/30 text-[13px] tracking-wider focus:outline-none transition-colors duration-300";
@@ -9,6 +10,15 @@ const INPUT_BASE =
 const NAVY = "oklch(0.22 0.07 252)";
 const NAVY_LIGHT = "oklch(0.27 0.07 252)";
 const GOLD = "oklch(0.78 0.12 84)";
+
+const INPUT_CONSTRAINTS: Record<string, { maxLength?: number; pattern?: string }> = {
+  fullName:  { maxLength: 100 },
+  email:     { maxLength: 150, pattern: "[^@\\s]+@[^@\\s]+\\.[^@\\s]+" },
+  phone:     { maxLength: 20,  pattern: "[\\d\\s\\+\\-\\(\\)]+" },
+  guests:    { maxLength: 3 },
+  eventDate: { maxLength: 10,  pattern: "\\d{2}/\\d{2}/\\d{4}" },
+  details:   { maxLength: 600 },
+};
 
 function FormInput({
   id,
@@ -27,6 +37,7 @@ function FormInput({
   min?: number;
   max?: number;
 }) {
+  const constraints = INPUT_CONSTRAINTS[name] ?? {};
   return (
     <div>
       <label className="sr-only" htmlFor={id}>
@@ -40,6 +51,10 @@ function FormInput({
         required={required}
         min={min}
         max={max}
+        maxLength={constraints.maxLength}
+        pattern={constraints.pattern}
+        autoComplete="off"
+        spellCheck={false}
         className={INPUT_BASE}
         style={{ borderBottomColor: "oklch(1 0 0 / 20%)" }}
         onFocus={(e) => (e.currentTarget.style.borderBottomColor = GOLD)}
@@ -53,6 +68,25 @@ function FormInput({
 
 export default function ContactPage() {
   const { t } = useTranslation();
+
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const fd = new FormData(e.currentTarget);
+    const clean = sanitizeContactForm({
+      fullName:    String(fd.get("fullName") ?? ""),
+      email:       String(fd.get("email") ?? ""),
+      phone:       String(fd.get("phone") ?? ""),
+      serviceType: String(fd.get("serviceType") ?? ""),
+      guests:      String(fd.get("guests") ?? ""),
+      eventDate:   String(fd.get("eventDate") ?? ""),
+      details:     String(fd.get("details") ?? ""),
+    });
+
+    // TODO: construir mensaje y abrir WhatsApp
+    // const msg = `Hola Avá Lé Privé 👋\n\nNombre: ${clean.fullName}\nEmail: ${clean.email}\nTeléfono: ${clean.phone}\nServicio: ${clean.serviceType}\nInvitados: ${clean.guests}\nFecha: ${clean.eventDate}\nDetalles: ${clean.details}`;
+    // window.open(`https://wa.me/1787XXXXXXX?text=${encodeURIComponent(msg)}`, "_blank");
+    console.log("Form ready:", clean);
+  }
 
   return (
     <main className="min-h-screen flex items-center justify-center py-32 md:py-40 px-4 sm:px-8 bg-stone-50">
@@ -185,8 +219,7 @@ export default function ContactPage() {
             <form
               id="contact-form"
               className="flex flex-col gap-8"
-              onSubmit={(e) => e.preventDefault()}
-              /* TODO: reemplazar onSubmit con el handler de WhatsApp */
+              onSubmit={handleSubmit}
             >
               {/* Nombre + Email */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
