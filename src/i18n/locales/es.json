@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "gastronomy": "Gastronomía",
+    "experiences": "Experiencias",
+    "cta": "Solicitar Experiencia"
+  },
+  "hero": {
+    "headline": "El Arte de la Alta Cocina Privada",
+    "infoBox": "Servicio culinario de ultra-lujo que evoca las páginas de una revista de alta gastronomía. Experiencias únicas para los pocos que lo distinguen."
+  },
+  "footer": {
+    "rights": "© 2025 Avá Lé Privé. Todos los derechos reservados."
+  }
+}
